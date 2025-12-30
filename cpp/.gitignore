@@ -1,0 +1,7 @@
+compile_flags.txt
+
+# anything test related
+test_*
+
+.vscode
+
