@@ -1,2 +1,12 @@
 CompileFlags:
-  Add: [-xc++, -std=c++23, -Wall, -Wextra, -Wpedantic]
+  Add: [
+      # DEBUG build
+      -xc++,
+      -std=c++23,
+      -ggdb,
+      -O0,
+      -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion,
+      -pendantic-errors,
+      -Werror, # Treat warnings as errors
+      -fmodules,
+    ]
